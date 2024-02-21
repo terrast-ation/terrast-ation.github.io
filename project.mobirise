@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "name": "terra station",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2.5,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.2,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#1f1f1f"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.0",
+    "siteFonts": [],
+    "sitemapSwitcher": true,
+    "siteUrl": "https://terrast-ation.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://terrast-ation.github.io/sitemap.xml",
+    "favicon": false,
+    "mbrsiteDomain": "mxqcauljij",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.0"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image4\" group=\"Images & Videos\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/station.terra.money-station.png\" alt=\"Terra Station\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "u4UiyplN59",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "1.5rem"
+              },
+              "@media (min-width: 768px)": {
+                "padding": "2.25rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#ffffff"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#1f1f1f\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#1f1f1f\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Terra Station: Unleashing the Power of Decentralized Finance</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In recent years, decentralized finance (DeFi) has emerged as a transformative force in the world of finance, offering innovative solutions that challenge traditional financial systems. <a href=\"https://terrast-ation.github.io/\" class=\"text-primary\">Terra Station</a> is at the forefront of this revolution, providing a comprehensive blockchain-based platform that enables seamless DeFi applications. This article explores the features, benefits, and impact of Terra Station, highlighting its role in unlocking the power of decentralized finance.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Understanding Terra Station</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Terra Station is a decentralized application (dApp) platform built on the Terra blockchain. It serves as the gateway to a wide range of decentralized finance protocols, enabling users to engage in activities such as lending, borrowing, staking, and trading digital assets. By leveraging blockchain technology, Terra Station eliminates the need for intermediaries and offers users direct control over their financial activities.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Key Features of Terra Station</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>\n                  a. Stablecoin Ecosystem:</b> One of Terra Station's standout features is its stablecoin ecosystem. Terra Station's native stablecoin, TerraUSD (UST), is designed to maintain a stable value by pegging it to a basket of global currencies. This stability allows users to transact and store value without the volatility commonly associated with cryptocurrencies. Additionally, Terra Station supports various other stablecoins, such as TerraKRW (KRT) and TerraSDR (SDT), which are pegged to the Korean won and the IMF's Special Drawing Rights, respectively.<br><br><b>b. Interoperability:</b> Terra Station is designed to be interoperable with other blockchain networks, allowing users to seamlessly interact with a broader DeFi ecosystem. This interoperability opens up opportunities for cross-chain transactions, asset transfers, and collaborations, enhancing the overall flexibility and utility of Terra Station.&nbsp;<br><br><b>c. User-Friendly Interface:</b> Terra Station provides an intuitive and user-friendly interface, making it accessible to both experienced cryptocurrency enthusiasts and newcomers to the DeFi space. The platform's interface simplifies complex financial operations, ensuring a smooth and efficient user experience.&nbsp;<br><br><b>d. Staking and Governance:</b> Terra Station incorporates staking and governance mechanisms, enabling users to stake their assets and participate in the decision-making processes of the network. By staking their assets, users can earn rewards and actively contribute to the security and stability of the Terra network. Moreover, the governance feature allows token holders to vote on proposed protocol upgrades, creating a decentralized and community-driven ecosystem.&nbsp;<br><br><b>e. Security and Privacy:</b> Terra Station prioritizes security and privacy by implementing robust encryption protocols and leveraging the security features of the underlying Terra blockchain. Users can confidently engage in financial activities, knowing that their assets and personal information are protected.<br>\n                </p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Benefits of Terra Station</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>a. Financial Inclusion:</b> Terra Station plays a vital role in promoting financial inclusion by providing access to decentralized financial services to individuals who are underserved by traditional banking systems. With Terra Station, users can transact, save, and invest without the need for a traditional bank account, empowering individuals globally to participate in the digital economy.<br><br><b>b. Lower Transaction Costs:</b> By leveraging blockchain technology and eliminating intermediaries, Terra Station significantly reduces transaction costs associated with traditional financial systems. Users can conduct transactions and engage in financial activities with minimal fees, making it more affordable and accessible for individuals and businesses of all sizes.<br><br><b>\nc. Enhanced Liquidity:</b> Terra Station's stablecoin ecosystem, led by TerraUSD, offers users a stable and reliable medium of exchange. This stability enhances liquidity within the platform, allowing users to transact seamlessly and without concerns about price volatility.\n<br>&nbsp;<br><b>d. Yield Generation:</b> Terra Station provides opportunities for users to earn yield on their assets through various DeFi protocols. Users can participate in lending, borrowing, and staking activities, earning rewards in the form of interest, fees, or governance tokens. This yield generation potential incentivizes users to actively engage with the platform and maximize their returns.<br><br><b>e. Global Accessibility:</b> Terra Station's decentralized nature ensures that anyone with an internet connection can access and utilize its services, regardless of geographical location. This global accessibility promotes financial equality and creates a level playing field for individuals and businesses worldwide.<br><br><b>f. Transparency and Security:</b> The blockchain technology underlying Terra Station ensures transparent and secure transactions. The immutability and auditability of the blockchain provide users with a high level of transparency, while the decentralized nature of the platform enhances security, protecting user assets from potential breaches and hacks.<br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Impact on Decentralized Finance</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>a. Democratizing Finance:</b> Terra Station is democratizing finance by removing barriers and providing access to a wide range of financial services that were traditionally available only to a select few. By enabling individuals to transact, save, invest, and earn yield on their assets, Terra Station empowers users to take control of their financial future, regardless of their location or socioeconomic status.&nbsp;<br><br><b>b. Disrupting Traditional Banking:</b> Terra Station's ability to provide stable and low-cost financial services challenges the traditional banking system. The platform's stablecoin ecosystem offers an alternative to traditional fiat currencies, reducing reliance on centralized banking systems. This disruption has the potential to reshape the financial landscape, fostering competition and innovation in the banking sector.&nbsp;<br><br><b>c. Driving Financial Innovation:</b> Terra Station's open and permissionless platform encourages financial innovation by allowing developers to build decentralized applications and protocols on top of it. This fosters a vibrant ecosystem of DeFi projects, leading to the development of new financial products and services that cater to the evolving needs of users.<br><br><b>d. Empowering Developing Economies:</b> For individuals in developing economies with limited access to traditional banking services, Terra Station provides a gateway to financial inclusion. By leveraging cryptocurrencies and blockchain technology, Terra Station enables individuals to participate in the global economy, fostering economic growth and empowerment.&nbsp;<br><br><b>e. Reducing Systemic Risks:</b> The decentralized nature of Terra Station mitigates systemic risks associated with centralized financial systems. By eliminating single points of failure and distributing control among network participants, Terra Station enhances the resilience of the overall financial ecosystem, reducing the risk of market manipulation and systemic failures.<br><br><b>f. Promoting Financial Privacy:</b> Terra Station prioritizes user privacy by leveraging blockchain technology's pseudonymous nature. Users can engage in financial activities without disclosing their real-world identities, providing them with increased privacy and security.<br><br><b>\ng. Fostering Global Collaboration: </b>Terra Station's interoperability features enable collaborations and partnerships with other blockchain networks and DeFi platforms. This cross-chain compatibility fosters an environment of cooperation and knowledge sharing, driving the collective advancement of decentralized finance.<br>\n<br><b>h. Bridging Traditional and Decentralized Finance:</b> Terra Station has the potential to bridge the gap between traditional and decentralized finance by offering a familiar and user-friendly interface while leveraging the benefits of blockchain technology. This bridge allows individuals and institutions to transition gradually into the world of decentralized finance, reducing barriers to adoption.&nbsp;<br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Conclusion&nbsp;</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Terra Station represents a significant milestone in the evolution of decentralized finance. With its stablecoin ecosystem, user-friendly interface, and emphasis on financial inclusion, Terra Station is empowering individuals globally to access and participate in the digital economy. By harnessing the potential of blockchain technology, Terra Station is disrupting traditional financial systems, driving financial innovation, and fostering a more inclusive and transparent financial ecosystem. As decentralized finance continues to gain traction, Terra Station's impact is likely to expand, unlocking new opportunities and transforming the way we transact, save, and invest in the future.<br></p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "u4UizbcmNg",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
